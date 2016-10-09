@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" cacheHint="SCALE_AND_ROTATE" focusTraversable="true" prefHeight="458.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s_m_system.SalesController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="426.0" layoutY="387.0" onAction="#saleInfo" prefHeight="50.0" prefWidth="151.0" ripplerFill="WHITE" style="-fx-background-color: #58ED7E;" text="SUBMIT" textFill="#58585e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="cutomerField" alignment="CENTER" focusColor="#43a840" labelFloat="true" layoutX="245.0" layoutY="29.0" maxWidth="257.0" minWidth="242.0" prefHeight="54.0" prefWidth="257.0" promptText="Customer" style="-fx-border-color: #3CDE06; -fx-border-width: 3;" unFocusColor="#000dff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="quentField" alignment="CENTER" focusColor="#43a840" labelFloat="true" layoutX="244.0" layoutY="229.0" maxWidth="257.0" minWidth="242.0" prefHeight="54.0" prefWidth="257.0" promptText="Quentity" style="-fx-border-color: #3CDE06; -fx-border-width: 3;" unFocusColor="#000dff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="priceField" alignment="CENTER" focusColor="#43a840" labelFloat="true" layoutX="244.0" layoutY="315.0" maxWidth="257.0" minWidth="242.0" prefHeight="54.0" prefWidth="257.0" promptText="Price" style="-fx-border-color: #3CDE06; -fx-border-width: 3;" unFocusColor="#000dff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="27.0" layoutY="35.0" prefHeight="43.0" prefWidth="151.0" text="Customer Name" textAlignment="CENTER" textFill="#6b6969">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="321.0" prefHeight="43.0" prefWidth="151.0" text="Price(Rs.)" textAlignment="CENTER" textFill="#6b6969">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="235.0" prefHeight="43.0" prefWidth="151.0" text="Quentity" textAlignment="CENTER" textFill="#6b6969">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="115.0" prefHeight="43.0" prefWidth="151.0" text="Tea Type" textAlignment="CENTER" textFill="#6b6969">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="rB3" layoutX="226.0" layoutY="152.0" prefHeight="27.0" prefWidth="126.0" text="Tea Bottles" textFill="#1c9a31">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tea" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rB1" layoutX="226.0" layoutY="110.0" prefHeight="27.0" prefWidth="126.0" text="Tea Packets" textFill="#1c9a31" toggleGroup="$tea">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rB2" layoutX="379.0" layoutY="110.0" text="Tea bulks(50Kg)" textFill="#1c9a31" toggleGroup="$tea">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

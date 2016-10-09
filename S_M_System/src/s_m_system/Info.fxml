@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s_m_system.InfoController">
+   <children>
+      <JFXTabPane layoutY="36.0" prefHeight="523.0" prefWidth="775.0">
+         <tabs>
+            <Tab text="Sales Infomation">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgba(213, 214, 214, 0.74);">
+                     <children>
+                        <ScrollPane layoutY="7.0" prefHeight="482.0" prefWidth="775.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="771.0">
+                                 <children>
+                                    <TableView fx:id="saleTable" prefHeight="481.0" prefWidth="775.0">
+                                      <columns>
+                                        <TableColumn fx:id="cusIdCol" prefWidth="82.0" text="Customer_ID" />
+                                        <TableColumn fx:id="cusCol" prefWidth="168.0" text="Customer" />
+                                          <TableColumn fx:id="typeCol" prefWidth="98.0" text="Type" />
+                                          <TableColumn fx:id="amountCol" prefWidth="118.0" text="Amount(Kg)" />
+                                          <TableColumn fx:id="priceCol" prefWidth="133.0" text="Price(Rs.)" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Raw Tea Information">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="-1.0" layoutY="7.0" prefHeight="486.0" prefWidth="775.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="775.0">
+                                 <children>
+                                    <TableView fx:id="rawTable" layoutX="2.0" prefHeight="477.0" prefWidth="775.0">
+                                      <columns>
+                                        <TableColumn fx:id="t_idCol" prefWidth="118.0" text="Type_ID" />
+                                        <TableColumn fx:id="typCol" prefWidth="111.0" text="Type" />
+                                          <TableColumn fx:id="amouCol" prefWidth="371.0" text="Amount(Kg)" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Finished Tea Information">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="3.0" layoutY="2.0" prefHeight="487.0" prefWidth="775.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="766.0">
+                                 <children>
+                                    <TableView fx:id="finishedTable" layoutX="4.0" layoutY="3.0" prefHeight="478.0" prefWidth="765.0">
+                                      <columns>
+                                        <TableColumn fx:id="f_t_idCol" prefWidth="130.0" text="Type_ID" />
+                                        <TableColumn fx:id="f_typCol" prefWidth="162.0" text="Type" />
+                                          <TableColumn fx:id="f_amouCol" prefWidth="285.0" text="Amount(Kg)" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Label alignment="CENTER" layoutX="4.0" prefHeight="36.0" prefWidth="767.0" text="Tea Information" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

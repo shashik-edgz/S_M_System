@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s_m_system.D_E_panelController">
+   <children>
+      <JFXTabPane layoutY="45.0" prefHeight="355.0" prefWidth="600.0">
+         <tabs>
+            <Tab text="Finished Tea">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="404.0" layoutY="255.0" onAction="#updateFtea" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #58ED7E;" text="Submit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="fTeaField" focusColor="#58ed7e" labelFloat="true" layoutX="236.0" layoutY="149.0" maxWidth="212.0" minWidth="205.0" prefHeight="45.0" prefWidth="212.0" promptText="Quentity" unFocusColor="#2cbf51">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></JFXTextField>
+                        <Label layoutX="65.0" layoutY="153.0" prefHeight="36.0" prefWidth="114.0" text="Quentity" textFill="#727272">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="50.0" prefHeight="36.0" prefWidth="114.0" text="Tea Types" textFill="#727272">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXRadioButton fx:id="fT1" alignment="CENTER_LEFT" layoutX="236.0" layoutY="42.0" text="Tea Packets" textFill="#12a858">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="finished" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="fT2" alignment="CENTER_LEFT" layoutX="236.0" layoutY="68.0" text="Tea Bottles" textFill="#12a858" toggleGroup="$finished">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="fT3" alignment="CENTER_LEFT" layoutX="382.0" layoutY="42.0" text="Bulk Tea(50Kg)" textFill="#12a858" toggleGroup="$finished">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Raw Tea">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="74.0" layoutY="69.0" prefHeight="36.0" prefWidth="114.0" text="Tea Types" textFill="#727272">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="74.0" layoutY="142.0" prefHeight="36.0" prefWidth="114.0" text="Amount(Kg)" textFill="#727272">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="rTeaField" focusColor="#58ed7e" labelFloat="true" layoutX="258.0" layoutY="139.0" maxWidth="205.0" minWidth="205.0" prefHeight="43.0" prefWidth="205.0" promptText="Kg" unFocusColor="#58ed7e">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></JFXTextField>
+                        <JFXButton buttonType="RAISED" layoutX="430.0" layoutY="246.0" onAction="#updateRtea" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #58ED7E;" text="Submit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXRadioButton fx:id="rT1" layoutX="233.0" layoutY="62.0" text="Black Tea" textFill="#17ae38">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="raw" />
+                           </toggleGroup></JFXRadioButton>
+                        <JFXRadioButton fx:id="rT2" layoutX="233.0" layoutY="89.0" text="OOLONG Tea" textFill="#17ae38" toggleGroup="$raw">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></JFXRadioButton>
+                        <JFXRadioButton fx:id="rT4" layoutX="401.0" layoutY="88.0" text="Green Tea" textFill="#17ae38" toggleGroup="$raw">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></JFXRadioButton>
+                        <JFXRadioButton fx:id="rT3" layoutX="401.0" layoutY="63.0" text="White Tea" textFill="#17ae38" toggleGroup="$raw">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></JFXRadioButton>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="7.0" prefHeight="31.0" prefWidth="469.0" text="Data Entire Panel" textFill="#097ce1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="484.0" onAction="#logout" prefHeight="45.0" prefWidth="116.0" style="-fx-background-color: #2196F3;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

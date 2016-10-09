@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.pane1{
+   
+    -fx-background-image:url('http://wallpapercave.com/wp/AE96R0o.jpg');
+    -fx-background-size: 900 506;
+    
+}
+.labe{
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+}
+.pane2{
+     -fx-background-color: rgba(255, 255, 255, 0.2);
+     -fx-border-color: white;
+     -fx-border-width: 4px;
+}

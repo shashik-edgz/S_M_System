@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s_m_system.LoginController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EFEFEF;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="214.0" layoutY="310.0" onAction="#Login" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #2196F3;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtUser" alignment="CENTER" focusColor="#43a840" labelFloat="true" layoutX="172.0" layoutY="106.0" maxWidth="257.0" minWidth="242.0" prefHeight="54.0" prefWidth="257.0" promptText="Username" style="-fx-border-color: #2196F3; -fx-border-width: 3;" unFocusColor="#083602">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPass" alignment="CENTER" focusColor="#469e59" labelFloat="true" layoutX="172.0" layoutY="200.0" maxWidth="257.0" minWidth="257.0" prefHeight="54.0" prefWidth="257.0" promptText="Password" style="-fx-border-color: #2196F3; -fx-border-width: 3;" unFocusColor="#0d3c03">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <Label fx:id="isConnected" alignment="CENTER" layoutX="14.0" layoutY="26.0" prefHeight="47.0" prefWidth="579.0" text="Login" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

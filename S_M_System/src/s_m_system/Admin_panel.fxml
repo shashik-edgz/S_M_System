@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s_m_system.Admin_Controller">
+   <children>
+      <Pane layoutX="178.0" prefHeight="463.0" prefWidth="423.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <JFXTextField fx:id="username1" focusColor="#27eef5" layoutX="170.0" layoutY="51.0" maxWidth="214.0" minWidth="214.0" prefHeight="48.0" prefWidth="214.0" promptText="Username" style="-fx-background-color: #FAFAFA;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password1" focusColor="#27eef5" layoutX="170.0" layoutY="117.0" maxWidth="214.0" minWidth="214.0" prefHeight="48.0" prefWidth="214.0" promptText="Password" style="-fx-background-color: #FAFAFA;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="201.0" layoutY="351.0" onAction="#sginUpReg" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: #2196F3;" text="Add Member" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Label contentDisplay="CENTER" layoutX="56.0" layoutY="59.0" prefHeight="33.0" prefWidth="97.0" text="Username" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="56.0" layoutY="125.0" prefHeight="33.0" prefWidth="97.0" text="Password" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="dEntry" layoutX="170.0" layoutY="248.0" text="Data Entry" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="admin_panel" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="admin" layoutX="170.0" layoutY="211.0" text="Admin" textFill="#317cee" toggleGroup="$admin_panel">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXRadioButton>
+         </children>
+         <effect>
+            <DropShadow color="#00000096" />
+         </effect>
+      </Pane>
+      <JFXButton layoutX="23.0" layoutY="401.0" onAction="#login_man1" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #317cee;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="23.0" layoutY="340.0" onAction="#home1" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #317cee;" text="Add Sale" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="-47.0" layoutY="104.0" prefHeight="61.0" prefWidth="269.0" rotate="-90.0" style="-fx-background-color: rgba(64, 201, 247, 0.25);" text=" ADMIN PANEL" textAlignment="CENTER" textFill="#21118d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="23.0" layoutY="281.0" onAction="#saleInfo" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #317cee;" text="Sale Info" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
